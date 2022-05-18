@@ -1,0 +1,12 @@
+<div class="needs-validation d-flex justify-content-center">
+  <%= simple_form_for (@flat), html: {style: "width:500px;"} do |f| %>
+    <div class="form-floating mb-3">
+      <%= f.input :name, class: "form-control", placeholder: "name" %>
+      <%= f.input :address, class: "form-control", placeholder: "address" %>
+      <%= f.input :description, class: "form-control", placeholder: "description" %>
+      <%= f.input :price_per_night, class: "form-control", placeholder: "description" %>
+      <%= f.input :number_of_guests, class: "form-control", placeholder: "description" %>
+      <%= f.submit "submit flat", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
